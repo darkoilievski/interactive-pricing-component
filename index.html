@@ -24,32 +24,51 @@
   <body>
     <header>
       <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
+      <p>Sign-up for our 30-day trial. <span>No credit card required.</span></p>
     </header>
     <main>
       <div class="main-header">
-        <p class="pageviews">Pageviews</p>
-        <p class="per-month">$ /month</p>
+        <p class="pageviews">100K Pageviews</p>
+        <p class="per-month"><span class="dollars" >16$ </span>/month</p>
       </div>
       <section class="slide">
-        <div class="slider">
-          <img
-            src="images/icon-slider.svg"
-            alt="slider"
-            class="slider-circle"
-          />
+          
+          <input type="range" class="slider" min="1" max="5"  value="1"/>
         </div>
       </section>
-      <img src="images/icon-check.svg" alt="check" />
-      Monthly Billing Yearly Billing 25% discount Unlimited websites 100% data
-      ownership Email reports Start my trial
+      <section class="monthly">
+        <p>Monthly Billing</p>
+        <input type="range" class="toggle" min="1" max="2" value="1">
+        <!-- <span class="toggle"></span>
+        <span class="toggle-2"></span>
+        <span class="toggle-3"></span> -->
+        <p>Yearly Billing</p>
+        <p class="percent">25% discount</p>
+      </section>
+      <hr />
+      <section class="bottom">
+        <div class="left">
+          <ul>
+            <li>
+              <img src="images/icon-check.svg" alt="check" /> Unlimited websites
+            </li>
+            <li>
+              <img src="images/icon-check.svg" alt="check" /> 100% data
+              ownership
+            </li>
+            <li>
+              <img src="images/icon-check.svg" alt="check" /> Email reports
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <button>Start my trial</button>
+        </div>
+      </section>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="footer">
+      Challenge by Frontend Mentor. Coded by <a href="#">Darko Ilievski</a>.
     </div>
   </body>
 </html>
